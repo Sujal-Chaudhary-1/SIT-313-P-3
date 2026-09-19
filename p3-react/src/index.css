@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Colours reused from your P1 (dark nav, light page) and P2 (purple accent, dark panel) */
+@theme {
+  --font-sans: "Segoe UI", Arial, sans-serif;
+  --color-page: #f5f5f5;
+  --color-dark: #222222;
+  --color-panel: #1a1a2e;
+  --color-accent: #8f6fff;
+  --color-accent-dark: #7a5cf0;
+  --color-star: #f2a900;
+}
+
+html { scroll-behavior: smooth; }
+body { @apply font-sans bg-page text-dark; margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
